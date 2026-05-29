@@ -14,12 +14,13 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Sowon's CS Note
+# the main title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: Computer Science Study Log # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  컴퓨터공학 전공지식과 프로젝트를 기록하는 공간
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
