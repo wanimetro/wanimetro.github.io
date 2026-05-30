@@ -1,7 +1,7 @@
 ---
 title: "Web Programming week1 0509"
 date: 2026-05-09
-categories: categories: [MyStudy, Web Programming_Paris]
+categories: [MyStudy, Web_Programming_Paris]
 tags:
   - HTML
   - CSS
