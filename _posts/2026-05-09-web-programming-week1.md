@@ -77,7 +77,7 @@ body-실제 웹 페이지, 보이는 몸통
 
 h1~hN-문서 내부에서 출력
 
-<a href="http://www.naver.com" target="_blank>네이버로 이동해라</a>
+```<a href="http://www.naver.com" target="_blank>네이버로 이동해라</a>```
 
 href: ~링크로 이동해라, 이동할 페이지 주소
 
@@ -145,9 +145,10 @@ ex) target=”_blank”, style=” “
 
 <th colspan=”3”> 3개의 열을 합침
 
+
 ### 메타데이터
 
-<meta name=”keyword” content=”web programming, HTML5, CSS3, javascript”>
+```<meta name=”keyword” content=”web programming, HTML5, CSS3, javascript”>
 
 해석: 인터넷에 키워드 web programming을 검색하면 이 사이트가 뜨도록
 
@@ -156,13 +157,14 @@ ex) target=”_blank”, style=” “
 해석: 작가 이름 넣기
 
 <meta charset=”UTF-8”> 한글 문자 set
+```
 
 고급 태그…
 
 <img/> 이미지태그
-
+```
 <img src="seojun.jpg" alt="서준"/> 태그 안에 이미지를 가져와서 출력해라, alt는 설명
-
+```
 ## 2. CSS
 
 디자인(글씨크기, 색깔..)
@@ -233,11 +235,12 @@ id는 중복되지 않는 값, 고유의 값
 		color: #0000FF;
 	}
 ```
-
+```
 <input type="radio" name="login-type" value="1">1번</br>
 <input type="radio" name="login-type" value="2">2번</br>
 <input type="checkbox" name="login-type2" value="2">체크</br>
 <button type="button"><img src="img/cat.jpeg"/></button>
+```
 
 ## 3. JavaScript
 
