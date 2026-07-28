@@ -1,9 +1,7 @@
 ---
 title: "Summer 2026: Beginning My Interactive Media Journey"
-date: 2026-07-28 20:00:00 +0900
-
+date: 2026-07-28
 categories: [Project]
-
 tags:
   - Summer 2026
   - Unity
