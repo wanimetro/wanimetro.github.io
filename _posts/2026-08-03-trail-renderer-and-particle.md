@@ -254,7 +254,7 @@ Hero
 
 ### Trail + Particle 결과
 
-![Day03 Demo](/assets/img/project/season1/day03.gif)
+![Day03 Demo](/assets/img/posts/season1/day03.gif)
 > Trail과 Particle을 적용한 현재 결과. 앞으로 Ripple과 Bloom 효과를 추가해 더욱 풍부한 빛 연출을 구현할 예정이다.
 
 ---
