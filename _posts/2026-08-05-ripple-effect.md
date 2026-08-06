@@ -182,14 +182,6 @@ Ripple의 시작 색상을 연한 보라빛으로 변경하고 Alpha 값을 낮�
 
 ---
 
-## 📍 Screenshot
-
-> Ripple Effect 구현 화면
-
-![Day04 Screenshot](/assets/img/posts/season1/day04.png)
-
----
-
 ## 📍 Demo
 
 Ripple Effect 구현 결과
