@@ -1,8 +1,8 @@
 ---
-title: "Amazon Bedrock 공부 | 03 프롬프트 엔지니어링 & 04 Bedrock으로 RAG 구현하기"
-date: 2026-08-19
-categories: [CS, AWS]
-tags: [AWS, Amazon Bedrock, RAG, LangChain, pgvector, PostgreSQL, Embedding]
+title: "Bedrock과 LangChain으로 RAG 구현하기"
+date: 2026-08-19 14:54:00 +0900
+categories: [AI & Cloud, Amazon Bedrock]
+tags: [aws, amazon-bedrock, generative-ai, langchain]
 ---
 
 오늘도 『Amazon Bedrock으로 시작하는 실전 생성형 AI 개발』을 읽으며 실습한 내용을 정리해보았다.

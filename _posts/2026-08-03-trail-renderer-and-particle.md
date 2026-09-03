@@ -1,8 +1,8 @@
 ---
-title: "Day 03 | Trail Renderer와 Particle로 빛의 흔적 만들기"
+title: "Trail Renderer와 Particle로 빛의 흔적 만들기"
 date: 2026-08-03 11:00:00 +0900
-categories: [Project]
-tags: [unity, csharp, interactive-media, mouse-interaction, devlog]
+categories: [Interactive Media]
+tags: [unity, mouse-interaction, devlog]
 ---
 
 

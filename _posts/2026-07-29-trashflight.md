@@ -1,8 +1,11 @@
 ---
-title: "Day 01 | Unity 2D Shooting Game"
+title: "Unity로 2D 슈팅 게임 만들며 기본기 익히기"
 date: 2026-07-29 14:00:00 +0900
-categories: [Project]
+categories: [Interactive Media]
 tags: [unity, 2d-game]
+image:                                              
+  path: /assets/img/posts/trash-flight/trashflight.gif
+  alt: 마우스로 조작하는 2D 슈팅 게임 플레이 화면
 ---
 
 ## 📍 Goal

@@ -1,8 +1,8 @@
 ---
-title: "Amazon Bedrock 공부 | 05 Bedrock으로 Agent 구현하기"
+title: "Bedrock으로 Agent 구현하기 | Tool Use 직접 만들어보기"
 date: 2026-08-20 14:54:00 +0900
-categories: [CS, AWS]
-tags: [aws, amazon-bedrock, agent, react, tool-use, strands-agents]
+categories: [AI & Cloud, Amazon Bedrock]
+tags: [aws, amazon-bedrock, generative-ai, agent]
 ---
 
 저번 챕터에서는 Bedrock을 활용해 RAG를 구현해보았다. 이번에는 여기서 한 단계 더 나아가 **Bedrock으로 Agent를 구현해보려고 한다.**

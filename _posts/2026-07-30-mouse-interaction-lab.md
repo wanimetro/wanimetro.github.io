@@ -1,8 +1,8 @@
 ---
-title: "Day 02 | Mouse Interaction Lab 기획과 캐릭터 드래그 구현"
+title: "마우스로 캐릭터를 집어 옮기기 — 드래그 인터랙션 구현"
 date: 2026-07-30 11:00:00 +0900
-categories: [Project]
-tags: [unity, csharp, interactive-media, mouse-interaction, devlog]
+categories: [Interactive Media]
+tags: [unity, mouse-interaction, devlog]
 ---
 
 # 📍 Goal

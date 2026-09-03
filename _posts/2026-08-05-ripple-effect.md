@@ -1,8 +1,8 @@
 ---
-title: "Day 04 | Ripple Effect로 클릭에 반응하는 빛의 파동 구현"
+title: "Ripple Effect로 클릭에 반응하는 빛의 파동 만들기"
 date: 2026-08-05 11:00:00 +0900
-categories: [Project]
-tags: [unity, csharp, mouse-interaction, ripple, devlog]
+categories: [Interactive Media]
+tags: [unity, ripple, devlog]
 ---
 
 ## 📍 Goal

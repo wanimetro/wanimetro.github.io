@@ -1,10 +1,11 @@
 ---
 title: "Projet Émerveiller | 프로젝트 운영 가이드"
 date: 2026-07-28 22:30:00 +0900
-categories: [Project]
-tags: [unity, csharp, interactive-media, devlog]
+categories: [Interactive Media]
+tags: [interactive-media, unity, devlog]
 pin: true
 ---
+
 
 # Projet Émerveiller
 

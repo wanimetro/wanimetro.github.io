@@ -1,8 +1,8 @@
 ---
-title: "Amazon Bedrock 공부 | 06 & 07 외부 모델 가져오기와 Bedrock 운영하기"
-date: 2026-08-20 14:54:00 +0900
-categories: [CS, AWS]
-tags: [aws, amazon-bedrock]
+title: "Bedrock에 외부 모델 가져오기와 운영 환경 구성"
+date: 2026-08-26 14:54:00 +0900
+categories: [AI & Cloud, Amazon Bedrock]
+tags: [aws, amazon-bedrock, generative-ai]
 ---
 
 

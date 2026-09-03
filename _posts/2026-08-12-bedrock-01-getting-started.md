@@ -1,8 +1,8 @@
 ---
-title: "Amazon Bedrock 공부 | 00~02 생성형 AI와 Bedrock 시작하기"
+title: "Amazon Bedrock 시작하기 | 생성형 AI와 첫 모델 호출"
 date: 2026-08-12 19:00:00 +0900
-categories: [CS, AWS]
-tags: [aws, amazon-bedrock, generative-ai, langchain, python]
+categories: [AI & Cloud, Amazon Bedrock]
+tags: [aws, amazon-bedrock, generative-ai, langchain]
 ---
 
 ## 학습 배경

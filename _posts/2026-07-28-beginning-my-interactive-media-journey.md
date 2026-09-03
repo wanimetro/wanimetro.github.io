@@ -1,12 +1,8 @@
 ---
 title: "Summer 2026: Beginning My Interactive Media Journey"
 date: 2026-07-28
-categories: [Project]
-tags:
-  - Summer 2026
-  - Unity
-  - Interactive Media
-  - Dev Log
+categories: [Interactive Media]
+tags: [unity, interactive-media, devlog]
 ---
 
 # Why I Started
@@ -87,5 +83,3 @@ Interactive Experience
 ```
 
 이번 프로젝트는 거창한 결과물을 만드는 것이 아니라, 하나의 기술을 배우고 기록하며 성장하는 과정을 남기는 첫 번째 프로젝트가 되었으면 합니다.
-
-See you in the next Dev Log. 🚀
