@@ -3,7 +3,6 @@ title: "Projet Émerveiller | 프로젝트 운영 가이드"
 date: 2026-07-28 22:30:00 +0900
 categories: [Interactive Media]
 tags: [interactive-media, unity, devlog]
-pin: true
 ---
 
 
@@ -22,7 +21,6 @@ pin: true
 단순히 기능을 구현하는 것을 넘어, 기술을 통해 사람들에게 새로운 경험과 감동을 전달하는 인터랙티브 콘텐츠를 만드는 것이 저의 목표입니다.
 
 이 프로젝트는 그 목표를 향해 배우고, 구현하고, 기록하며 성장하는 모든 과정을 담아갈 예정입니다.
-
 ---
 
 ## 🌟 Vision
