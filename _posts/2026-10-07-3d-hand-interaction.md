@@ -75,7 +75,7 @@ Webcam → Hand Tracking → 손 좌표 (x,y,z) → Three.js 3D 그래프 → �
 Pinch로 노드 선택 → 손 이동에 따라 노드 이동 → Release
 ```
 
-[시연 영상 보기] (https://www.youtube.com/watch?v=kp9EgDZEHO8&feature=youtu.be)
+[시연 영상 보기](https://www.youtube.com/watch?v=kp9EgDZEHO8&feature=youtu.be)
 
 ## 선택한 노드의 관계만 강조하기
 
