@@ -1,0 +1,92 @@
+---
+title: "Force-Directed Graph를 3D로 확장하기 | 웹캠 Hand Tracking 적용"
+date: 2026-10-07 12:00:00 +0900
+categories: [Interactive Media, Data Visualization]
+tags: [d3, force-directed-graph, threejs, mediapipe, hand-tracking]
+---
+
+## 과제
+
+『레미제라블』의 등장인물 관계를 정리한 `miserables.json` 데이터 파일의 네트워크 데이터를 Force-Directed Graph로 시각화하는 코드가 주어졌다.
+
+등장인물 간의 관계 네트워크는 등장인물의 co-occurrence, 즉 함께 등장하는 관계의 강도를 나타낸다.
+
+교수님께서 제시한 예제는 레미제라블 등장인물의 co-occurrence 관계를 노드와 링크로 표현하고, D3 Force Simulation을 통해 연결 관계에 따라 노드 위치를 동적으로 결정하는 2D 네트워크 시각화다.
+
+- [D3 Force-Directed Graph (Observable)](https://observablehq.com/@d3/force-directed-graph/2)
+- [Gist - abkunal](https://gist.github.com/abkunal/98d35b9b235312e90f3e43c9f7b6932b)
+
+## 데이터
+
+노드는 이렇게 생겼다.
+
+```json
+{"id": "Valjean", "group": 2}
+{"id": "Javert", "group": 7}
+{"id": "Cosette", "group": 5}
+{"id": "Marius", "group": 8}
+```
+
+각 등장인물을 노드로 처리한다.
+
+`group`은 각 등장인물이 속한 커뮤니티를 나타내는 범주값이고, 시각화에서는 같은 그룹을 같은 색으로 표현한다. group으로 묶는 데 따로 어떤 조건이 있는 건 아니고 임의로 묶은 것이다.
+
+링크는 이렇게 생겼다.
+
+```json
+{
+  "source": "Cosette",
+  "target": "Valjean",
+  "value": 31
+}
+```
+
+Cosette와 Valjean 사이의 관계 강도가 31이라는 뜻이다.
+
+## Force Simulation
+
+노드 위치를 사람이 하나하나 지정한 게 아니라, 가상의 물리 법칙을 적용해서 노드들의 위치가 스스로 정해진다.
+
+연결된 애들은 당기고, 노드끼리는 밀어내고, 전체적으로 중앙에 모은다. 이 세 힘의 균형점에서 그래프 모양이 만들어진다.
+
+## 3D로 data 구현하기
+
+2D 관계 네트워크를 3D상에 구현하라는 과제를 받았다. 그런데 3D로 단순히 구현만 하기에는 데이터를 보는 사람 입장에서 의미가 없다고 느껴졌다. 사용자의 움직임에 따라 데이터가 반응하면 좋겠다는 생각을 했다.
+
+웹에서 구현한다는 전제라면 웹캠을 쓰는 게 가장 현실적이라고 판단했다. 별도 XR 기기 없이 노트북 웹캠으로 손을 인식해서, 손 위치를 3D 그래프 조작값으로 연결하면 되기 때문이다.
+
+그래서 기존 2D Force-Directed Graph를 3D 공간으로 확장하고, 기존 마우스 Drag 인터랙션을 웹캠 기반 Hand Tracking과 Pinch Gesture를 이용한 직접 조작 방식으로 확장했다.
+
+구조는 대략 이렇다.
+
+```
+Webcam → Hand Tracking → 손 좌표 (x,y,z) → Three.js 3D 그래프 → 손 움직임에 따라 그래프 반응
+```
+
+- 손 인식 : MediaPipe Hand Landmarker
+- 3D 렌더링 : Three.js
+- force-directed graph : `3d-force-graph` 또는 D3 force simulation
+
+특히 MediaPipe는 손의 21개 landmark를 추적할 수 있어서, 단순히 손을 따라 움직이는 것뿐 아니라 나중에는 검지 위치, 손바닥 위치, pinch 제스처까지 확장할 수 있다.
+
+인터랙션 흐름은 다음과 같다.
+
+```
+Pinch로 노드 선택 → 손 이동에 따라 노드 이동 → Release
+```
+
+[시연 영상 보기] (https://www.youtube.com/watch?v=kp9EgDZEHO8&feature=youtu.be)
+
+## 선택한 노드의 관계만 강조하기
+
+구현하다 보니, 3D 공간에서도 많은 노드와 링크가 동시에 표시되면 특정 노드의 관계를 파악하기 어렵다는 문제가 있었다. 사용자가 노드 하나를 선택해도 노드들 간의 관계가 복잡해서 눈으로 알아보기 어려웠다.
+
+그래서 사용자가 손으로 특정 노드를 선택하면, 해당 노드와 직접 연결된 노드와 링크만 강조하고 나머지는 시각적으로 약화해서 관계 구조에 집중할 수 있도록 확장했다.
+
+아무 노드에 커서를 갖다 대고 pinch하면, 그 순간 그 노드와 직접 연결된 노드만 색이 남고 나머지 노드는 짙은 회색으로 죽는다. 연결된 선만 확 밝아지면서 선택한 노드가 강조된다.
+
+[시연 영상 보기](https://youtu.be/aNr-baygX8Y)
+
+## 코드
+
+[GitHub - wanimetro/3d-hand-force-graph](https://github.com/wanimetro/3d-hand-force-graph)
